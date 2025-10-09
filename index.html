@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Weather App 🌤</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="animated-bg">
+    <div class="sun"></div>
+    <div class="moon"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="rain"></div>
+    <div class="snow"></div>
+    <div class="stars"></div>
+  </div>
+
+  <div class="container">
+    <h1>🌤 Smart Weather App</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <input type="text" id="countryInput" placeholder="Enter country code (e.g., IN)" maxlength="2" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="weather-info">
+      <h2 id="cityName"></h2>
+      <div class="icon-temp">
+        <i id="weatherIcon" class="fas fa-sun"></i>
+        <h3 id="temperature"></h3>
+      </div>
+      <p id="description"></p>
+      <p id="time"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
